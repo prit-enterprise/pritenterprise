@@ -10,7 +10,7 @@ const Contact = () => {
 
   const center = {
     lat: 22.8373,
-    lng: 74.2536
+    lng: 74.2536 // Coordinates for Dahod
   };
 
   return (
@@ -20,7 +20,7 @@ const Contact = () => {
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-semibold text-gray-900 mb-6">Contact Us</h1>
           <p className="text-xl text-gray-500">
-            We're here to help. Reach out to us for any inquiries about our products and distribution.
+            Get in touch with Gujarat's exclusive distributor for Davat Beverages
           </p>
         </div>
       </div>
@@ -36,14 +36,14 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-gray-400" />
                   <div>
                     <p className="text-lg text-gray-900">Visit Us</p>
-                    <p className="text-gray-500">123 Main Street, Dahod, Gujarat, India</p>
+                    <p className="text-gray-500">PLOT NO-16, SRI RAM BUILDERS COMPOUND, CHAKALA ROAD, Dahod, Gujarat, 389151, India</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
                   <Phone className="h-6 w-6 text-gray-400" />
                   <div>
                     <p className="text-lg text-gray-900">Call Us</p>
-                    <p className="text-gray-500">+91 1234567890</p>
+                    <p className="text-gray-500">+91-2673-244666</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
