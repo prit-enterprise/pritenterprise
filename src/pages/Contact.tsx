@@ -5,60 +5,88 @@ import { MapPin, Phone, Mail } from "lucide-react";
 const Contact = () => {
   const mapContainerStyle = {
     width: '100%',
-    height: '400px'
+    height: '500px'
   };
 
   const center = {
-    lat: 22.8373, // Dahod latitude
-    lng: 74.2536  // Dahod longitude
+    lat: 22.8373,
+    lng: 74.2536
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-12 text-[#7E69AB]">Contact Us</h1>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="space-y-6">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <MapPin className="text-[#9b87f5]" />
-                  <span>123 Main Street, Dahod, Gujarat, India</span>
+    <div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <div className="py-24 bg-[#f5f5f7]">
+        <div className="max-w-3xl mx-auto px-4 text-center">
+          <h1 className="text-5xl font-semibold text-gray-900 mb-6">Contact Us</h1>
+          <p className="text-xl text-gray-500">
+            We're here to help. Reach out to us for any inquiries about our products and distribution.
+          </p>
+        </div>
+      </div>
+
+      {/* Contact Information */}
+      <div className="max-w-7xl mx-auto px-4 py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+          <div className="space-y-12">
+            <div>
+              <h2 className="text-3xl font-semibold text-gray-900 mb-8">Get in Touch</h2>
+              <div className="space-y-6">
+                <div className="flex items-center space-x-4">
+                  <MapPin className="h-6 w-6 text-gray-400" />
+                  <div>
+                    <p className="text-lg text-gray-900">Visit Us</p>
+                    <p className="text-gray-500">123 Main Street, Dahod, Gujarat, India</p>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Phone className="text-[#9b87f5]" />
-                  <span>+91 1234567890</span>
+                <div className="flex items-center space-x-4">
+                  <Phone className="h-6 w-6 text-gray-400" />
+                  <div>
+                    <p className="text-lg text-gray-900">Call Us</p>
+                    <p className="text-gray-500">+91 1234567890</p>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Mail className="text-[#9b87f5]" />
-                  <span>contact@pritenterprise.com</span>
+                <div className="flex items-center space-x-4">
+                  <Mail className="h-6 w-6 text-gray-400" />
+                  <div>
+                    <p className="text-lg text-gray-900">Email Us</p>
+                    <p className="text-gray-500">contact@pritenterprise.com</p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h2 className="text-2xl font-semibold mb-4">Business Hours</h2>
-              <div className="space-y-2">
-                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                <p>Saturday: 9:00 AM - 2:00 PM</p>
-                <p>Sunday: Closed</p>
+            <div>
+              <h2 className="text-3xl font-semibold text-gray-900 mb-8">Business Hours</h2>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center border-b border-gray-100 pb-4">
+                  <span className="text-gray-500">Monday - Friday</span>
+                  <span className="text-gray-900">9:00 AM - 6:00 PM</span>
+                </div>
+                <div className="flex justify-between items-center border-b border-gray-100 pb-4">
+                  <span className="text-gray-500">Saturday</span>
+                  <span className="text-gray-900">9:00 AM - 2:00 PM</span>
+                </div>
+                <div className="flex justify-between items-center border-b border-gray-100 pb-4">
+                  <span className="text-gray-500">Sunday</span>
+                  <span className="text-gray-900">Closed</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <h2 className="text-2xl font-semibold mb-4">Our Location</h2>
-            <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
-              <GoogleMap
-                mapContainerStyle={mapContainerStyle}
-                center={center}
-                zoom={15}
-              >
-                <Marker position={center} />
-              </GoogleMap>
-            </LoadScript>
+          <div>
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
+                <GoogleMap
+                  mapContainerStyle={mapContainerStyle}
+                  center={center}
+                  zoom={15}
+                >
+                  <Marker position={center} />
+                </GoogleMap>
+              </LoadScript>
+            </div>
           </div>
         </div>
       </div>

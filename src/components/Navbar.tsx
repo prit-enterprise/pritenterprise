@@ -4,26 +4,23 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+    <nav className="bg-[rgba(255,255,255,0.8)] backdrop-blur-md fixed w-full z-50">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex justify-between h-12 items-center px-8">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <span className="text-xl font-bold text-[#9b87f5]">Prit Enterprise</span>
+              <span className="text-lg font-medium text-gray-900">Prit Enterprise</span>
             </Link>
           </div>
-          <div className="flex items-center space-x-4">
-            <Link to="/" className="flex items-center space-x-1 text-gray-700 hover:text-[#7E69AB]">
-              <Home size={20} />
-              <span>Home</span>
+          <div className="flex items-center space-x-8">
+            <Link to="/" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+              Home
             </Link>
-            <Link to="/products" className="flex items-center space-x-1 text-gray-700 hover:text-[#7E69AB]">
-              <ShoppingCart size={20} />
-              <span>Products</span>
+            <Link to="/products" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+              Products
             </Link>
-            <Link to="/contact" className="flex items-center space-x-1 text-gray-700 hover:text-[#7E69AB]">
-              <Phone size={20} />
-              <span>Contact</span>
+            <Link to="/contact" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+              Contact
             </Link>
           </div>
         </div>
