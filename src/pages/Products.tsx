@@ -178,13 +178,6 @@ const Products = () => {
       image: "/products/Mozzy_160ml288.png"
     },
     {
-      id: 26,
-      name: "DO NEW_Davat_...23_WEB_",
-      category: "Unknown",
-      description: "",
-      image: "/products/DO NEW_Davat_...23_WEB_.png"
-    },
-    {
       id: 27,
       name: "ORANGE-160-CAP288",
       category: "Unknown",
