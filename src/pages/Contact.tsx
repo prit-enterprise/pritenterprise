@@ -63,7 +63,7 @@ Dahod</p>
                 </div>
                 <div className="flex justify-between items-center border-b border-gray-100 pb-4">
                   <span className="text-gray-500">Sunday</span>
-                  <span className="text-gray-900">Closed</span>
+                  <span className="text-gray-900">8:00 AM - 3:00 PM</span>
                 </div>
               </div>
             </div>
