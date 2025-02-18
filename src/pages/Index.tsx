@@ -1,12 +1,9 @@
-
 import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, Phone, Star, Shield, Truck } from "lucide-react";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <div className="relative bg-[#f5f5f7] py-32">
         <div className="max-w-5xl mx-auto px-4 text-center">
@@ -15,9 +12,7 @@ const Index = () => {
             Experience the Ultimate
             <br />Refreshment
           </h1>
-          <p className="text-xl text-gray-500 mb-12 max-w-3xl mx-auto">
-            Since 2009, Prit Enterprise has been Gujarat's premier beverage distributor. Now proudly serving as the exclusive distributor for Davat Beverages.
-          </p>
+          <p className="text-xl text-gray-500 mb-12 max-w-3xl mx-auto">Since 1999, Prit Enterprise has been in beverages industry. Now proudly serving as the exclusive distributor for Davat Beverages.</p>
           <div className="flex justify-center space-x-6">
             <Link to="/products">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
@@ -140,8 +135,6 @@ const Index = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
