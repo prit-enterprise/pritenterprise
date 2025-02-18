@@ -6,9 +6,16 @@ const Contact = () => {
     height: '500px'
   };
   const center = {
-    lat: 22.8373,
-    lng: 74.2536 // Coordinates for Dahod
+    lat: 22.840098, // Updated coordinates for GIDC Phase-1
+    lng: 74.260932  // Chakaliya Road area
   };
+  
+  const options = {
+    mapTypeControl: true,
+    streetViewControl: true,
+    fullscreenControl: true,
+  };
+
   return <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <div className="py-24 bg-[#f5f5f7]">
@@ -44,7 +51,7 @@ Dahod</p>
                   <Mail className="h-6 w-6 text-gray-400" />
                   <div>
                     <p className="text-lg text-gray-900">Email Us</p>
-                    <p className="text-gray-500">contact@pritenterprise.com</p>
+                    <p className="text-gray-500">ripaldesai76@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -54,12 +61,8 @@ Dahod</p>
               <h2 className="text-3xl font-semibold text-gray-900 mb-8">Business Hours</h2>
               <div className="space-y-4">
                 <div className="flex justify-between items-center border-b border-gray-100 pb-4">
-                  <span className="text-gray-500">Monday - Friday</span>
+                  <span className="text-gray-500">Monday - Saturday</span>
                   <span className="text-gray-900">9:00 AM - 6:00 PM</span>
-                </div>
-                <div className="flex justify-between items-center border-b border-gray-100 pb-4">
-                  <span className="text-gray-500">Saturday</span>
-                  <span className="text-gray-900">9:00 AM - 2:00 PM</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-gray-100 pb-4">
                   <span className="text-gray-500">Sunday</span>
@@ -71,9 +74,17 @@ Dahod</p>
 
           <div>
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
-                <GoogleMap mapContainerStyle={mapContainerStyle} center={center} zoom={15}>
-                  <Marker position={center} />
+              <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
+                <GoogleMap 
+                  mapContainerStyle={mapContainerStyle} 
+                  center={center} 
+                  zoom={17}
+                  options={options}
+                >
+                  <Marker 
+                    position={center}
+                    title="PRIT Enterprise"
+                  />
                 </GoogleMap>
               </LoadScript>
             </div>

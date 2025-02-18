@@ -8,9 +8,8 @@ const Index = () => {
       <div className="relative bg-[#f5f5f7] py-32">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <span className="inline-block text-blue-600 font-medium mb-4">Exclusive Distributor of Davat Beverages</span>
-          <h1 className="text-6xl font-semibold text-gray-900 mb-6">
-            Experience the Ultimate
-            <br />Refreshment
+          <h1 className="text-5xl font-semibold text-gray-900 mb-6">
+            Timeless Flavors, Trusted Distribution
           </h1>
           <p className="text-xl text-gray-500 mb-12 max-w-3xl mx-auto">Since 1999, Prit Enterprise has been in beverages industry. Now proudly serving as the exclusive distributor for Davat Beverages.</p>
           <div className="flex justify-center space-x-6">
@@ -68,10 +67,10 @@ const Index = () => {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img src="/product-images/davat-1.jpg" alt="Davat Beverages Product" className="rounded-2xl shadow-lg hover:scale-105 transition-all duration-300" />
-              <img src="/product-images/davat-2.jpg" alt="Davat Beverages Facility" className="rounded-2xl shadow-lg hover:scale-105 transition-all duration-300" />
-              <img src="/product-images/davat-3.jpg" alt="Davat Beverages Range" className="rounded-2xl shadow-lg hover:scale-105 transition-all duration-300" />
-              <img src="/product-images/davat-4.jpg" alt="Davat Quality Control" className="rounded-2xl shadow-lg hover:scale-105 transition-all duration-300" />
+              <img src="public/products/NEW_Davat_FINAL_Logo_2023_WEB_.png" alt="Davat Beverages Product" className="rounded-2xl shadow-lg hover:scale-105 transition-all duration-300" />
+              <img src="/public/factory.jpg" alt="Davat Beverages Facility" className="rounded-2xl shadow-lg hover:scale-105 transition-all duration-300" />
+              <img src="/public/r&d.jpg" alt="Davat Beverages Range" className="rounded-2xl shadow-lg hover:scale-105 transition-all duration-300" />
+              <img src="/public/jeera-home.jpg" alt="Davat Quality Control" className="rounded-2xl shadow-lg hover:scale-105 transition-all duration-300" />
             </div>
           </div>
         </div>
@@ -119,8 +118,8 @@ const Index = () => {
           <h2 className="text-4xl font-semibold text-center mb-16">Why Choose Prit Enterprise</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="p-8 text-center bg-white shadow-lg hover:shadow-xl transition-all duration-300">
-              <h3 className="text-xl font-semibold mb-4">14+ Years Experience</h3>
-              <p className="text-gray-600">Established in 2009, we bring expertise and reliability to beverage distribution</p>
+              <h3 className="text-xl font-semibold mb-4">25+ Years Experience</h3>
+              <p className="text-gray-600">Established in 1999, we bring expertise and reliability to beverage distribution</p>
             </Card>
             <Card className="p-8 text-center bg-white shadow-lg hover:shadow-xl transition-all duration-300">
               <h3 className="text-xl font-semibold mb-4">Exclusive Partnership</h3>

@@ -25,11 +25,8 @@ const About = () => {
             </p>
           </div>
           <div className="relative">
-            <img 
-              src="/product-images/facility.jpg" 
-              alt="Prit Enterprise Facility"
-              className="rounded-2xl shadow-xl"
-            />
+            
+          
           </div>
         </div>
       </div>
