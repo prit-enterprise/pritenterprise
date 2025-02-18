@@ -42,9 +42,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold">World-Class Beverages</h3>
-              <p className="text-gray-600">
-                Davat Beverages is renowned for blending traditional and contemporary flavors, with modern production facilities in Rajkot, Gujarat. Together, we're bringing their exceptional range of products to customers across Gujarat, Maharashtra, Madhya Pradesh, and Rajasthan.
-              </p>
+              <p className="text-gray-600">Davat Beverages is renowned for blending traditional and contemporary flavors, with modern production facilities in Rajkot, Gujarat. Together, we're bringing their exceptional range of products to customers across Dahod.</p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
                   <Star className="text-blue-600 mt-1" size={20} />
