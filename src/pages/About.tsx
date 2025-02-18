@@ -7,7 +7,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-semibold text-gray-900 mb-6">About Us</h1>
           <p className="text-xl text-gray-500">
-            Gujarat's premier beverage distributor since 2009, now exclusive partners with Davat Beverages
+            Dahod's premier beverage company since 1999, now exclusive partners with Davat Beverages
           </p>
         </div>
       </div>
@@ -18,10 +18,10 @@ const About = () => {
           <div>
             <h2 className="text-3xl font-semibold mb-6">Our Story</h2>
             <p className="text-gray-600 mb-6">
-              Founded by Mr. Desai Ripal Nanubhai in 2009, Prit Enterprise has grown from a local distributor to a major player in Gujarat's beverage industry. Our commitment to quality and customer service has been the cornerstone of our success.
+              Founded by Mr. Ripal Desai in 1999, Prit Enterprise has grown from a small beverage manufacturer to Davat Beverage's Super Stockist for Dahod District. Our commitment to quality and customer service has been the cornerstone of our success.
             </p>
             <p className="text-gray-600">
-              In 2024, we proudly became the exclusive distributor for Davat Beverages, marking a new chapter in our journey to deliver excellence in beverage distribution.
+              In 2018, we proudly became the exclusive distributor for Davat Beverages, marking a new chapter in our journey to deliver excellence in beverage distribution.
             </p>
           </div>
           <div className="relative">
