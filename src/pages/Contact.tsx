@@ -1,20 +1,15 @@
-
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import { MapPin, Phone, Mail } from "lucide-react";
-
 const Contact = () => {
   const mapContainerStyle = {
     width: '100%',
     height: '500px'
   };
-
   const center = {
     lat: 22.8373,
     lng: 74.2536 // Coordinates for Dahod
   };
-
-  return (
-    <div className="min-h-screen bg-white">
+  return <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <div className="py-24 bg-[#f5f5f7]">
         <div className="max-w-3xl mx-auto px-4 text-center">
@@ -36,7 +31,8 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-gray-400" />
                   <div>
                     <p className="text-lg text-gray-900">Visit Us</p>
-                    <p className="text-gray-500">PLOT NO-16, SRI RAM BUILDERS COMPOUND, CHAKALA ROAD, Dahod, Gujarat, 389151, India</p>
+                    <p className="text-gray-500">L/201/5,  GIDC Phase-1, Chakaliya Road,
+Dahod</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -78,11 +74,7 @@ const Contact = () => {
           <div>
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
-                <GoogleMap
-                  mapContainerStyle={mapContainerStyle}
-                  center={center}
-                  zoom={15}
-                >
+                <GoogleMap mapContainerStyle={mapContainerStyle} center={center} zoom={15}>
                   <Marker position={center} />
                 </GoogleMap>
               </LoadScript>
@@ -90,8 +82,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
