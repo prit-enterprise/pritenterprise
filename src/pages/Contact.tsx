@@ -14,9 +14,7 @@ const Contact = () => {
       <div className="py-24 bg-[#f5f5f7]">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-semibold text-gray-900 mb-6">Contact Us</h1>
-          <p className="text-xl text-gray-500">
-            Get in touch with Gujarat's exclusive distributor for Davat Beverages
-          </p>
+          <p className="text-xl text-gray-500">Get in touch with Dahod's exclusive distributor for Davat Beverages</p>
         </div>
       </div>
 
