@@ -7,252 +7,252 @@ const Products = () => {
       name: "Oxx-Classic",
       category: "Energy Drinks",
       description: "",
-      image: "/public/products/1-Web-Oxx-Classic.png"
+      image: "/products/1-Web-Oxx-Classic.png"
     },
     {
       id: 2,
       name: "Oxx-Prime",
       category: "Energy Drinks",
       description: "",
-      image: "/public/products/1-Web-Oxx-Prime.png"
+      image: "/products/1-Web-Oxx-Prime.png"
     },
     {
       id: 3,
       name: "Tetra-Copy",
       category: "Fruit Juices",
       description: "",
-      image: "/public/products/125_ML-Tetra...opy-V2-1.png"
+      image: "/products/125_ML-Tetra...opy-V2-1.png"
     },
     {
       id: 4,
       name: "Tetra-Orange",
       category: "Fruit Juices",
       description: "",
-      image: "/public/products/125_ML-Tetra...range-2-1.png"
+      image: "/products/125_ML-Tetra...range-2-1.png"
     },
     {
       id: 5,
       name: "Soda",
       category: "Carbonated Beverages",
       description: "",
-      image: "/public/products/698.png"
+      image: "/products/698.png"
     },
     {
       id: 6,
       name: "22423-LOVE-..E-160288",
       category: "Unknown",
       description: "",
-      image: "/public/products/22423-LOVE-..E-160288.png"
+      image: "/products/22423-LOVE-..E-160288.png"
     },
     {
       id: 7,
       name: "22423-MALT...S-CAP288",
       category: "Unknown",
       description: "",
-      image: "/public/products/22423-MALT...S-CAP288.png"
+      image: "/products/22423-MALT...S-CAP288.png"
     },
     {
       id: 8,
       name: "BERRY 288",
       category: "Unknown",
       description: "",
-      image: "/public/products/BERRY 288.png"
+      image: "/products/BERRY 288.png"
     },
     {
       id: 9,
       name: "Changer-CAN...w-01-288",
       category: "Unknown",
       description: "",
-      image: "/public/products/Changer-CAN...w-01-288.png"
+      image: "/products/Changer-CAN...w-01-288.png"
     },
     {
       id: 10,
       name: "Cranberry-Or...ra_Packet",
       category: "Unknown",
       description: "",
-      image: "/public/products/Cranberry-Or...ra_Packet.png"
+      image: "/products/Cranberry-Or...ra_Packet.png"
     },
     {
       id: 11,
       name: "(BB0 GREEN-G-160-CAP288",
       category: "Unknown",
       description: "",
-      image: "/public/products/(BB0 GREEN-G-160-CAP288.png"
+      image: "/products/(BB0 GREEN-G-160-CAP288.png"
     },
     {
       id: 12,
       name: "Guava_160ml288",
       category: "Unknown",
       description: "",
-      image: "/public/products/Guava_160ml288.png"
+      image: "/products/Guava_160ml288.png"
     },
     {
       id: 13,
       name: "Guava-Tetra_Packet",
       category: "Unknown",
       description: "",
-      image: "/public/products/Guava-Tetra_Packet.pong"
+      image: "/products/Guava-Tetra_Packet.pong"
     },
     {
       id: 14,
       name: "HERBY-800PXL",
       category: "Unknown",
       description: "",
-      image: "/public/products/HERBY-800PXL.png"
+      image: "/products/HERBY-800PXL.png"
     },
     {
       id: 15,
       name: "image-22",
       category: "Unknown",
       description: "",
-      image: "/public/products/image-22.png"
+      image: "/products/image-22.png"
     },
     {
       id: 16,
       name: "JEERA-160-CAP288",
       category: "Unknown",
       description: "",
-      image: "/public/products/JEERA-160-CAP288.png"
+      image: "/products/JEERA-160-CAP288.png"
     },
     {
       id: 17,
       name: "Lemon-Apple-Tetra_Packet",
       category: "Unknown",
       description: "",
-      image: "/public/products/Lemon-Apple-Tetra_Packet.png"
+      image: "/products/Lemon-Apple-Tetra_Packet.png"
     },
     {
       id: 18,
       name: "Lemon-Orang...ra_Packet",
       category: "Unknown",
       description: "",
-      image: "/public/products/Lemon-Orang...ra_Packet.png"
+      image: "/products/Lemon-Orang...ra_Packet.png"
     },
     {
       id: 19,
       name: "Limon-Pudina..._Packet-1",
       category: "Unknown",
       description: "",
-      image: "/public/products/Limon-Pudina..._Packet-1.png"
+      image: "/products/Limon-Pudina..._Packet-1.png"
     },
     {
       id: 20,
       name: "Limpoo_160ml288",
       category: "Unknown",
       description: "",
-      image: "/public/products/Limpoo_160ml288.png"
+      image: "/products/Limpoo_160ml288.png"
     },
     {
       id: 21,
       name: "LIMUN-160-CAP288",
       category: "Unknown",
       description: "",
-      image: "/public/products/LIMUN-160-CAP288.png"
+      image: "/products/LIMUN-160-CAP288.png"
     },
     {
       id: 22,
       name: "Lychee_160ml288",
       category: "Unknown",
       description: "",
-      image: "/public/products/Lychee_160ml288.png"
+      image: "/products/Lychee_160ml288.png"
     },
     {
       id: 23,
       name: "Lychee-Tetra_Packet",
       category: "Unknown",
       description: "",
-      image: "/public/products/Lychee-Tetra_Packet.png"
+      image: "/products/Lychee-Tetra_Packet.png"
     },
     {
       id: 24,
       name: "MALTY-CAN-...latten288",
       category: "Unknown",
       description: "",
-      image: "/public/products/MALTY-CAN-...latten288.png"
+      image: "/products/MALTY-CAN-...latten288.png"
     },
     {
       id: 25,
       name: "Mozzy_160ml288",
       category: "Unknown",
       description: "",
-      image: "/public/products/Mozzy_160ml288.png"
+      image: "/products/Mozzy_160ml288.png"
     },
     {
       id: 26,
       name: "DO NEW_Davat_...23_WEB_",
       category: "Unknown",
       description: "",
-      image: "/public/products/DO NEW_Davat_...23_WEB_.png"
+      image: "/products/DO NEW_Davat_...23_WEB_.png"
     },
     {
       id: 27,
       name: "ORANGE-160-CAP288",
       category: "Unknown",
       description: "",
-      image: "/public/products/ORANGE-160-CAP288.png"
+      image: "/products/ORANGE-160-CAP288.png"
     },
     {
       id: 28,
       name: "PEPYO-NEW-...TLE-F288",
       category: "Unknown",
       description: "",
-      image: "/public/products/PEPYO-NEW-...TLE-F288.png"
+      image: "/products/PEPYO-NEW-...TLE-F288.png"
     },
     {
       id: 29,
       name: "Pineapple-Tetra_Packet",
       category: "Unknown",
       description: "",
-      image: "/public/products/Pineapple-Tetra_Packet.png"
+      image: "/products/Pineapple-Tetra_Packet.png"
     },
     {
       id: 30,
       name: "powermode-c...mopolitan",
       category: "Unknown",
       description: "",
-      image: "/public/products/powermode-c...mopolitan.png"
+      image: "/products/powermode-c...mopolitan.png"
     },
     {
       id: 31,
       name: "powermode-g...er-lemon",
       category: "Unknown",
       description: "",
-      image: "/public/products/powermode-g...er-lemon.png"
+      image: "/products/powermode-g...er-lemon.png"
     },
     {
       id: 32,
       name: "powermode-jamun",
       category: "Unknown",
       description: "",
-      image: "/public/products/powermode-jamun.png"
+      image: "/products/powermode-jamun.png"
     },
     {
       id: 33,
       name: "powermode-orange",
       category: "Unknown",
       description: "",
-      image: "/public/products/powermode-orange.png"
+      image: "/products/powermode-orange.png"
     },
     {
       id: 34,
       name: "powermode-verry-berry",
       category: "Unknown",
       description: "",
-      image: "/public/products/powermode-verry-berry.ong"
+      image: "/products/powermode-verry-berry.ong"
     },
     {
       id: 35,
       name: "SODA-750ML2880",
       category: "Unknown",
       description: "",
-      image: "/public/products/SODA-750ML2880.pong"
+      image: "/products/SODA-750ML2880.pong"
     },
     {
       id: 36,
       name: "water-bottle-880px",
       category: "Unknown",
       description: "",
-      image: "/public/products/water-bottle-880px.png"
+      image: "/products/water-bottle-880px.png"
     }
   ];
 
@@ -264,7 +264,7 @@ const Products = () => {
       <div className="relative w-full h-[calc(100vh-4rem)] overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/public/banner.jpg"
+            src="/banner.jpg"
             alt="Products Banner"
             className="w-full h-full object-cover"
           />

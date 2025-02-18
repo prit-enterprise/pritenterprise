@@ -25,8 +25,11 @@ const About = () => {
             </p>
           </div>
           <div className="relative">
-            
-          
+            <img 
+              src="/company-image.jpg" 
+              alt="Prit Enterprise History" 
+              className="rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </div>
