@@ -39,7 +39,7 @@ Dahod</p>
                   <Phone className="h-6 w-6 text-gray-400" />
                   <div>
                     <p className="text-lg text-gray-900">Call Us</p>
-                    <p className="text-gray-500">+91-2673-244666</p>
+                    <p className="text-gray-500">+91-9408431514</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
