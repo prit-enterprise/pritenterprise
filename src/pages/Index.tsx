@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -70,7 +69,7 @@ const Index = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img src="/products/NEW_Davat_FINAL_Logo_2023_WEB_.png" alt="Davat Beverages Product" className="rounded-2xl shadow-lg hover:scale-105 transition-all duration-300" />
-              <img src="=/factory.jpg" alt="Davat Beverages Facility" className="rounded-2xl shadow-lg hover:scale-105 transition-all duration-300" />
+              <img src="/factory.jpg" alt="Davat Beverages Facility" className="rounded-2xl shadow-lg hover:scale-105 transition-all duration-300" />
               <img src="/r&d.jpg" alt="Davat Beverages Range" className="rounded-2xl shadow-lg hover:scale-105 transition-all duration-300" />
               <img src="/jeera-home.jpg" alt="Davat Quality Control" className="rounded-2xl shadow-lg hover:scale-105 transition-all duration-300" />
             </div>
