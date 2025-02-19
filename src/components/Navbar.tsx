@@ -7,9 +7,9 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-[rgba(255,255,255,0.8)] backdrop-blur-md fixed w-full z-50">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between h-16 items-center px-4 md:px-8">
+    <nav className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200 dark:border-gray-800">
+      <div className="max-w-7xl mx-auto px-8">
+        <div className="flex justify-between h-16 items-center">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <span className="text-lg font-semibold text-gray-900">Prit Enterprise</span>
@@ -26,7 +26,7 @@ const Navbar = () => {
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+            <Link to="/" className="text-sm text-gray-600 hover:text-primary transition-colors">
               Home
             </Link>
             <Link to="/about" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
@@ -40,42 +40,6 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-
-        {/* Mobile menu */}
-        {isMenuOpen && (
-          <div className="md:hidden bg-white border-t">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              <Link 
-                to="/" 
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Home
-              </Link>
-              <Link 
-                to="/about" 
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
-              </Link>
-              <Link 
-                to="/products" 
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Products
-              </Link>
-              <Link 
-                to="/contact" 
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
-              </Link>
-            </div>
-          </div>
-        )}
       </div>
     </nav>
   );
