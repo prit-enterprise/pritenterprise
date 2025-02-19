@@ -11,8 +11,8 @@ interface ProductCardProps {
 
 const ProductCard = ({ name, category, image }: ProductCardProps) => {
   return (
-    <Card className="overflow-hidden group hover:shadow-xl transition-all duration-300 bg-white/80 backdrop-blur-sm">
-      <div className="aspect-w-1 aspect-h-1 bg-gradient-to-br from-orange-50 to-amber-50 p-4">
+    <Card className="overflow-hidden group hover:shadow-xl transition-all duration-300">
+      <div className="aspect-w-1 aspect-h-1 bg-white p-4">
         <img
           src={image}
           alt={name}
@@ -20,8 +20,8 @@ const ProductCard = ({ name, category, image }: ProductCardProps) => {
         />
       </div>
       <div className="p-4 md:p-6">
-        <h3 className="text-lg md:text-xl font-semibold text-orange-900 mb-2">{name}</h3>
-        <p className="text-sm text-orange-600">{category}</p>
+        <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-2">{name}</h3>
+        <p className="text-sm text-gray-500">{category}</p>
       </div>
     </Card>
   );
