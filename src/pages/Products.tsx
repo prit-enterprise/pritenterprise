@@ -1,6 +1,18 @@
+
 import { Card } from "@/components/ui/card";
+import { useState } from "react";
 
 const Products = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  const categories = [
+    "All",
+    "Energy Drinks",
+    "Fruit Juices",
+    "Carbonated Beverages"
+  ];
+
+  // Updated products array with the correct image paths
   const products = [
     {
       id: 1,
@@ -249,41 +261,59 @@ const Products = () => {
     }
   ];
 
-  const categories = ["All", "Carbonated Beverages", "Fruit Juices", "Health Drinks", "Traditional Drinks"];
+  const filteredProducts = selectedCategory === "All" 
+    ? products 
+    : products.filter(product => product.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Hero Section with Navbar Space */}
-      <div className="relative w-full h-[calc(100vh-4rem)] overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="/banner.jpg"
-            alt="Products Banner"
-            className="w-full h-full object-cover"
-          />
+    <div className="min-h-screen bg-white pt-24">
+      {/* Hero Section */}
+      <div className="bg-[#f5f5f7] py-16 md:py-20">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h1 className="text-3xl md:text-5xl font-semibold text-gray-900 mb-6">Our Products</h1>
+          <p className="text-lg md:text-xl text-gray-500">
+            Explore our complete range of premium beverages
+          </p>
         </div>
-        <div className="absolute inset-0 bg-black/5" /> {/* Subtle overlay */}
-        <div className="relative z-10 h-full flex items-center">
-          <div className="px-4 md:px-8 mt-16">
-            <h1 className="text-6xl font-bold text-black mb-6 font-dancing-script">Our Products</h1>
-            
-          </div>
+      </div>
+
+      {/* Category Filter */}
+      <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="flex flex-wrap justify-center gap-3 mb-8">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={`px-4 py-2 rounded-full text-sm transition-colors ${
+                selectedCategory === category
+                  ? "bg-gray-900 text-white"
+                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+              }`}
+            >
+              {category}
+            </button>
+          ))}
         </div>
       </div>
 
       {/* Products Grid */}
-      <div className="max-w-7xl mx-auto px-4 py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product) => (
-            <Card key={product.id} className="rounded-2xl overflow-hidden shadow-lg">
-              <img
-                src={product.image}
-                alt={product.name}
-                className="w-full h-64 object-contain p-4"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900">{product.name}</h3>
-                <p className="mt-2 text-gray-500">{product.description}</p>
+      <div className="max-w-7xl mx-auto px-4 pb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {filteredProducts.map((product) => (
+            <Card 
+              key={product.id} 
+              className="overflow-hidden group hover:shadow-xl transition-all duration-300"
+            >
+              <div className="aspect-w-1 aspect-h-1 bg-white p-4">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="object-contain w-full h-full group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-4 md:p-6">
+                <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-2">{product.name}</h3>
+                <p className="text-sm text-gray-500">{product.category}</p>
               </div>
             </Card>
           ))}
