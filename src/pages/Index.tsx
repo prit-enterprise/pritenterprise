@@ -40,7 +40,7 @@ const Index = () => {
       <div className="py-32">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Partnership with Davat Beverages</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our distribution of Davat Beverages</h2>
             <p className="text-xl text-black/70 max-w-2xl mx-auto">
               Uniting Prit Enterprise's robust distribution network with Davat's exceptional product quality and innovation
             </p>
@@ -77,16 +77,29 @@ const Index = () => {
             </div>
             <div className="grid grid-cols-2 gap-6">
               {[
-                "/products/NEW_Davat_FINAL_Logo_2023_WEB_.png",
-                "/factory.jpg",
-                "/r&d.jpg",
-                "/jeera-home.jpg"
-              ].map((src, index) => (
-                <div key={src} className="neo-border neo-shadow hover:-translate-y-1 transition-transform">
+                { 
+                  src: "/products/NEW_Davat_FINAL_Logo_2023_WEB_.png", 
+                  style: { objectFit: "contain", backgroundColor: "white", padding: "2rem" }
+                },
+                { 
+                  src: "/factory.jpg", 
+                  style: { objectFit: "cover" }
+                },
+                { 
+                  src: "/r&d.jpg", 
+                  style: { objectFit: "cover" }
+                },
+                { 
+                  src: "/jeera-home.jpg", 
+                  style: { objectFit: "cover" }
+                }
+              ].map(({ src, style }, index) => (
+                <div key={src} className="neo-border neo-shadow hover:-translate-y-1 transition-transform aspect-square overflow-hidden">
                   <img
                     src={src}
                     alt={`Davat Beverages ${index + 1}`}
-                    className="w-full aspect-square object-cover"
+                    className="w-full h-full"
+                    style={style}
                   />
                 </div>
               ))}
@@ -104,17 +117,17 @@ const Index = () => {
               {
                 title: "Carbonated Beverages",
                 desc: "Refreshing fizzy drinks in various flavors",
-                img: "/product-images/carbonated.jpg"
+                img: "carbonated.png"
               },
               {
                 title: "Fruit Beverages",
                 desc: "Natural and ready-to-serve fruit drinks",
-                img: "/product-images/fruit-drinks.jpg"
+                img: "juices.png"
               },
               {
                 title: "Canned Beverages",
                 desc: "Premium canned drinks for on-the-go",
-                img: "/product-images/canned.jpg"
+                img: "canned.png"
               }
             ].map((product) => (
               <div key={product.title} className="bg-white neo-border neo-shadow hover:-translate-y-1 transition-transform">

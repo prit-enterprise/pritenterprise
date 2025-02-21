@@ -24,13 +24,7 @@ const About = () => {
               In 2018, we proudly became the exclusive distributor for Davat Beverages, marking a new chapter in our journey to deliver excellence in beverage distribution.
             </p>
           </div>
-          <div className="neo-border neo-shadow hover:-translate-y-1 transition-transform">
-            <img 
-              src="/company-image.jpg" 
-              alt="Prit Enterprise History" 
-              className="w-full aspect-square object-cover"
-            />
-          </div>
+          
         </div>
       </div>
 
