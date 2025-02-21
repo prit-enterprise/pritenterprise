@@ -8,29 +8,29 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="relative bg-secondary py-32 border-y border-border">
+      <div className="relative bg-[#FFDE59] py-32 neo-border">
         <div className="max-w-5xl mx-auto px-4 text-center">
-          <span className="inline-block text-muted-foreground font-medium mb-8 uppercase tracking-widest text-sm">
+          <span className="inline-block bg-black text-white px-4 py-2 mb-8 uppercase tracking-wider text-sm neo-shadow transform hover:-translate-y-0.5 transition-transform">
             Exclusive Distributor of Davat Beverages
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-primary mb-8 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold text-black mb-8 leading-tight">
             Timeless Flavors,<br />Trusted Distribution
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-black/80 mb-12 max-w-2xl mx-auto">
             Since 1999, Prit Enterprise has been crafting excellence in the beverages industry. Now proudly serving as the exclusive distributor for Davat Beverages.
           </p>
-          <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+          <div className="flex flex-col md:flex-row justify-center gap-6">
             <Link to="/products">
-              <Button size="lg" className="w-full md:w-auto px-8">
-                <ShoppingCart className="mr-2" />
+              <button className="w-full md:w-auto px-8 py-4 bg-black text-white neo-shadow hover:-translate-y-0.5 transition-transform flex items-center justify-center gap-2 text-lg">
+                <ShoppingCart className="w-5 h-5" />
                 Explore Products
-              </Button>
+              </button>
             </Link>
             <Link to="/contact">
-              <Button size="lg" variant="outline" className="w-full md:w-auto px-8">
-                <Phone className="mr-2" />
+              <button className="w-full md:w-auto px-8 py-4 bg-white neo-border neo-shadow hover:-translate-y-0.5 transition-transform flex items-center justify-center gap-2 text-lg">
+                <Phone className="w-5 h-5" />
                 Contact Us
-              </Button>
+              </button>
             </Link>
           </div>
         </div>
@@ -40,83 +40,97 @@ const Index = () => {
       <div className="py-32">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-20">
-            <h2 className="text-3xl md:text-4xl font-serif mb-6 text-primary">Our Partnership with Davat Beverages</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Partnership with Davat Beverages</h2>
+            <p className="text-xl text-black/70 max-w-2xl mx-auto">
               Uniting Prit Enterprise's robust distribution network with Davat's exceptional product quality and innovation
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <h3 className="text-2xl font-serif text-primary">World-Class Beverages</h3>
-              <p className="text-muted-foreground leading-relaxed">
+            <div className="space-y-8 p-8 bg-[#61E8E1] neo-border neo-shadow">
+              <h3 className="text-2xl font-bold">World-Class Beverages</h3>
+              <p className="text-black/80">
                 Davat Beverages is renowned for blending traditional and contemporary flavors, with modern production facilities in Rajkot, Gujarat. Together, we're bringing their exceptional range of products to customers across Dahod.
               </p>
               <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <Star className="text-primary shrink-0 mt-1" size={20} />
+                <div className="flex items-start space-x-4 p-4 bg-white neo-border">
+                  <Star className="text-black shrink-0 mt-1" size={24} />
                   <div>
-                    <h4 className="font-serif text-primary mb-2">Premium Quality</h4>
-                    <p className="text-muted-foreground">State-of-the-art production facilities ensuring the highest standards</p>
+                    <h4 className="font-bold mb-2">Premium Quality</h4>
+                    <p className="text-black/70">State-of-the-art production facilities ensuring the highest standards</p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4">
-                  <Shield className="text-primary shrink-0 mt-1" size={20} />
+                <div className="flex items-start space-x-4 p-4 bg-white neo-border">
+                  <Shield className="text-black shrink-0 mt-1" size={24} />
                   <div>
-                    <h4 className="font-serif text-primary mb-2">Innovation</h4>
-                    <p className="text-muted-foreground">Continuous research and development for better products</p>
+                    <h4 className="font-bold mb-2">Innovation</h4>
+                    <p className="text-black/70">Continuous research and development for better products</p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4">
-                  <Truck className="text-primary shrink-0 mt-1" size={20} />
+                <div className="flex items-start space-x-4 p-4 bg-white neo-border">
+                  <Truck className="text-black shrink-0 mt-1" size={24} />
                   <div>
-                    <h4 className="font-serif text-primary mb-2">Wide Distribution</h4>
-                    <p className="text-muted-foreground">Extensive network covering multiple states</p>
+                    <h4 className="font-bold mb-2">Wide Distribution</h4>
+                    <p className="text-black/70">Extensive network covering multiple states</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-6">
-              <img src="/products/NEW_Davat_FINAL_Logo_2023_WEB_.png" alt="Davat Beverages Product" className="w-full aspect-square object-cover hover:opacity-90 transition-opacity" />
-              <img src="/factory.jpg" alt="Davat Beverages Facility" className="w-full aspect-square object-cover hover:opacity-90 transition-opacity" />
-              <img src="/r&d.jpg" alt="Davat Beverages Range" className="w-full aspect-square object-cover hover:opacity-90 transition-opacity" />
-              <img src="/jeera-home.jpg" alt="Davat Quality Control" className="w-full aspect-square object-cover hover:opacity-90 transition-opacity" />
+              {[
+                "/products/NEW_Davat_FINAL_Logo_2023_WEB_.png",
+                "/factory.jpg",
+                "/r&d.jpg",
+                "/jeera-home.jpg"
+              ].map((src, index) => (
+                <div key={src} className="neo-border neo-shadow hover:-translate-y-1 transition-transform">
+                  <img
+                    src={src}
+                    alt={`Davat Beverages ${index + 1}`}
+                    className="w-full aspect-square object-cover"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
 
       {/* Featured Products */}
-      <div className="py-32 bg-secondary border-y border-border">
+      <div className="py-32 bg-[#FF90B3] neo-border">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-serif text-center mb-20">Featured Products</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-20">Featured Products</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="bg-background border-border hover:border-primary transition-colors duration-300">
-              <div className="aspect-square p-12 border-b border-border">
-                <img src="/product-images/carbonated.jpg" alt="Carbonated Beverages" className="object-contain w-full h-full hover:scale-105 transition-transform duration-300" />
+            {[
+              {
+                title: "Carbonated Beverages",
+                desc: "Refreshing fizzy drinks in various flavors",
+                img: "/product-images/carbonated.jpg"
+              },
+              {
+                title: "Fruit Beverages",
+                desc: "Natural and ready-to-serve fruit drinks",
+                img: "/product-images/fruit-drinks.jpg"
+              },
+              {
+                title: "Canned Beverages",
+                desc: "Premium canned drinks for on-the-go",
+                img: "/product-images/canned.jpg"
+              }
+            ].map((product) => (
+              <div key={product.title} className="bg-white neo-border neo-shadow hover:-translate-y-1 transition-transform">
+                <div className="aspect-square p-8 border-b-2 border-black bg-[#F5F5F5]">
+                  <img
+                    src={product.img}
+                    alt={product.title}
+                    className="object-contain w-full h-full"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-3">{product.title}</h3>
+                  <p className="text-black/70">{product.desc}</p>
+                </div>
               </div>
-              <div className="p-8">
-                <h3 className="text-xl font-serif mb-3 text-primary">Carbonated Beverages</h3>
-                <p className="text-muted-foreground leading-relaxed">Refreshing fizzy drinks in various flavors</p>
-              </div>
-            </Card>
-            <Card className="bg-background border-border hover:border-primary transition-colors duration-300">
-              <div className="aspect-square p-12 border-b border-border">
-                <img src="/product-images/fruit-drinks.jpg" alt="Fruit Beverages" className="object-contain w-full h-full hover:scale-105 transition-transform duration-300" />
-              </div>
-              <div className="p-8">
-                <h3 className="text-xl font-serif mb-3 text-primary">Fruit Beverages</h3>
-                <p className="text-muted-foreground leading-relaxed">Natural and ready-to-serve fruit drinks</p>
-              </div>
-            </Card>
-            <Card className="bg-background border-border hover:border-primary transition-colors duration-300">
-              <div className="aspect-square p-12 border-b border-border">
-                <img src="/product-images/canned.jpg" alt="Canned Beverages" className="object-contain w-full h-full hover:scale-105 transition-transform duration-300" />
-              </div>
-              <div className="p-8">
-                <h3 className="text-xl font-serif mb-3 text-primary">Canned Beverages</h3>
-                <p className="text-muted-foreground leading-relaxed">Premium canned drinks for on-the-go</p>
-              </div>
-            </Card>
+            ))}
           </div>
         </div>
       </div>
@@ -124,20 +138,27 @@ const Index = () => {
       {/* Why Choose Us */}
       <div className="py-32">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-serif text-center mb-20">Why Choose Prit Enterprise</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-20">Why Choose Prit Enterprise</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="p-8 text-center border-border hover:border-primary transition-colors duration-300">
-              <h3 className="text-xl font-serif mb-4 text-primary">25+ Years Experience</h3>
-              <p className="text-muted-foreground leading-relaxed">Established in 1999, we bring expertise and reliability to beverage distribution</p>
-            </Card>
-            <Card className="p-8 text-center border-border hover:border-primary transition-colors duration-300">
-              <h3 className="text-xl font-serif mb-4 text-primary">Exclusive Partnership</h3>
-              <p className="text-muted-foreground leading-relaxed">Official distributor of Davat Beverages' premium product range</p>
-            </Card>
-            <Card className="p-8 text-center border-border hover:border-primary transition-colors duration-300">
-              <h3 className="text-xl font-serif mb-4 text-primary">Quality Assured</h3>
-              <p className="text-muted-foreground leading-relaxed">Maintaining the highest standards in product quality and storage</p>
-            </Card>
+            {[
+              {
+                title: "25+ Years Experience",
+                desc: "Established in 1999, we bring expertise and reliability to beverage distribution"
+              },
+              {
+                title: "Exclusive Partnership",
+                desc: "Official distributor of Davat Beverages' premium product range"
+              },
+              {
+                title: "Quality Assured",
+                desc: "Maintaining the highest standards in product quality and storage"
+              }
+            ].map((item) => (
+              <div key={item.title} className="p-8 text-center bg-[#61E8E1] neo-border neo-shadow hover:-translate-y-1 transition-transform">
+                <h3 className="text-xl font-bold mb-4">{item.title}</h3>
+                <p className="text-black/80">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

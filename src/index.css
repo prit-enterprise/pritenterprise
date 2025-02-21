@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,26 +6,26 @@
 
 @layer base {
   :root {
-    --background: 30 33% 98%;
-    --foreground: 224 71% 4%;
+    --background: 0 0% 98%;
+    --foreground: 0 0% 12%;
     --card: 0 0% 100%;
-    --card-foreground: 224 71% 4%;
+    --card-foreground: 0 0% 12%;
     --popover: 0 0% 100%;
-    --popover-foreground: 224 71% 4%;
-    --primary: 221 83% 12%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 26 24% 92%;
-    --secondary-foreground: 221 83% 12%;
-    --muted: 26 24% 92%;
-    --muted-foreground: 220 8% 46%;
-    --accent: 26 24% 92%;
-    --accent-foreground: 221 83% 12%;
+    --popover-foreground: 0 0% 12%;
+    --primary: 200 95% 39%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 351 95% 71%;
+    --secondary-foreground: 0 0% 12%;
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 54 95% 67%;
+    --accent-foreground: 0 0% 12%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 224 71% 4%;
-    --radius: 0rem;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 12%;
+    --input: 0 0% 12%;
+    --ring: 0 0% 12%;
+    --radius: 0px;
   }
 }
 
@@ -37,9 +37,14 @@
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif tracking-tight;
-  }
+}
+
+.neo-shadow {
+  @apply shadow-[4px_4px_0px_0px_rgba(0,0,0,0.9)];
+}
+
+.neo-border {
+  @apply border-2 border-black;
 }
 
 .container {
