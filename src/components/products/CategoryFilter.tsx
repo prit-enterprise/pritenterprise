@@ -13,10 +13,10 @@ const CategoryFilter = ({ categories, selectedCategory, onCategorySelect }: Cate
           <button
             key={category}
             onClick={() => onCategorySelect(category)}
-            className={`px-6 py-3 text-base transition-colors border-2 ${
+            className={`px-6 py-3 transition-transform hover:-translate-y-0.5 neo-border ${
               selectedCategory === category
-                ? "bg-gray-900 text-white border-gray-900"
-                : "bg-white text-gray-600 border-gray-200 hover:border-gray-900"
+                ? "bg-black text-white neo-shadow"
+                : "bg-white text-black hover:neo-shadow"
             }`}
           >
             {category}
