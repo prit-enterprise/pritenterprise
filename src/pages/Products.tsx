@@ -13,7 +13,7 @@ const Products = () => {
     : products.filter(product => product.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-white pt-24">
+    <div className="min-h-screen bg-white">
       <ProductsHero />
       <CategoryFilter 
         categories={categories}

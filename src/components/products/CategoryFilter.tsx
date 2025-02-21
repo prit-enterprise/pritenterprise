@@ -7,16 +7,16 @@ interface CategoryFilterProps {
 
 const CategoryFilter = ({ categories, selectedCategory, onCategorySelect }: CategoryFilterProps) => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
-      <div className="flex flex-wrap justify-center gap-3 mb-8">
+    <div className="max-w-7xl mx-auto px-4 py-12">
+      <div className="flex flex-wrap justify-center gap-4">
         {categories.map((category) => (
           <button
             key={category}
             onClick={() => onCategorySelect(category)}
-            className={`px-4 py-2 rounded-full text-sm transition-colors ${
+            className={`px-6 py-3 text-base transition-colors border-2 ${
               selectedCategory === category
-                ? "bg-gray-900 text-white"
-                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                ? "bg-gray-900 text-white border-gray-900"
+                : "bg-white text-gray-600 border-gray-200 hover:border-gray-900"
             }`}
           >
             {category}
