@@ -99,7 +99,7 @@ const Index = () => {
                     src={src}
                     alt={`Davat Beverages ${index + 1}`}
                     className="w-full h-full"
-                    style={style}
+                    
                   />
                 </div>
               ))}
