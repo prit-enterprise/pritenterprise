@@ -23,7 +23,7 @@ export const products = [
   },
   {
     id: 3,
-    name: "Tetra-Copy",
+    name: "Tetra",
     category: "Fruit Juices",
     description: "",
     image: "/products/125_ML-Tetra-Pack-Mockup_New-Mozzy-copy-V2-1.png"
@@ -37,7 +37,7 @@ export const products = [
   },
   {
     id: 5,
-    name: "Soda",
+    name: "Jeera King",
     category: "Carbonated Beverages",
     description: "",
     image: "/products/698.png"
