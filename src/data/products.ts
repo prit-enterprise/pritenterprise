@@ -37,7 +37,7 @@ export const products = [
   },
   {
     id: 5,
-    name: "Soda",
+    name: "Jeera King",
     category: "Carbonated Beverages",
     description: "",
     image: "/products/698.png"
