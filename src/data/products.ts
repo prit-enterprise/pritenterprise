@@ -23,7 +23,7 @@ export const products = [
   },
   {
     id: 3,
-    name: "Tetra",
+    name: "Mozzy Tetra",
     category: "Fruit Juices",
     description: "",
     image: "/products/125_ML-Tetra-Pack-Mockup_New-Mozzy-copy-V2-1.png"
